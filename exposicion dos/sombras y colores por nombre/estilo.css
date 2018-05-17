@@ -1,0 +1,91 @@
+body {
+  background-color: rgba(164, 72, 32, 0.76);
+}
+p{
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color:rgb(233, 136, 34);
+  color: #000000;
+  margin: 3em auto;
+  padding: 1em;
+  border-radius: 20px;
+  width: 50%;
+  /* Ejemplo de sombra */
+  box-shadow: 10px 10px 53px -1px rgba(0,0,0,0.75);
+}
+
+h1 {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 1.5em;
+  color:#FF8C2F;
+  /* Ejemplo de sombra */
+  text-shadow: #000000 3px 3px 0px;
+}
+h2 {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 1.5em;
+  color:#ffffff;
+  text-shadow: #000000 1px 1px 0px,
+    #FF8C2F 2px 2px 0px,
+    #000000 3px 3px 0px,
+    #FF8C2F 4px 4px 0px,
+    #000000 5px 5px 0px,
+    #FF8C2F 6px 6px 0px,
+    #000000 7px 7px 0px,
+    #FF8C2F 8px 8px 0px,
+    #000000 9px 9px 0px,
+    #FF8C2F 10px 10px 0px,
+    #000000 11px 11px 0px,
+    #FF8C2F 12px 12px 0px,
+    #000000 13px 13px 0px,
+    #FF8C2F 14px 14px 0px,
+    #000000 15px 15px 0px;
+}
+h3 {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 1.5em;
+  color: #FF8C2F;
+  text-shadow: #000000 1px 1px 0px,
+    #000000 2px 2px 0px,
+    #111111 3px 3px 0px,
+    #222222 4px 4px 0px,
+    #666666 5px 5px 0px,
+    #666666 6px 6px 0px,
+    #555555 7px 7px 0px,
+    #444444 8px 8px 0px,
+    #333333 9px 9px 0px,
+    #222222 10px 10px 0px,
+    #111111 11px 11px 0px,
+    #000000 12px 12px 0px,
+    #000000 13px 13px 0px,
+    #000000 14px 14px 0px,
+    #000000 15px 15px 0px;
+}
+div{
+  font-size: 50px;
+  align-self: flex-end;
+  background-color: rgb(255, 255, 255);
+webkit-box-shadow: -5px -4px 5px 1px rgba(0,0,0,0.34);
+moz-box-shadow: -5px -4px 5px 1px rgba(0,0,0,0.34);
+box-shadow: -5px -4px 5px 1px rgba(0,0,0,0.34);
+}
+img{
+  box-shadow: #000000 3px 3px 0px;
+}
