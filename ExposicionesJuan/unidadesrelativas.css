@@ -1,0 +1,45 @@
+body{
+
+
+  font-size: 20PX
+}
+
+
+/*.parrafo{
+height: 200%;
+width: 100%*
+font-size: 100%/
+
+  width: 100vh; /* ancho del viewport *
+  padding-top: 1em;
+  padding-bottom: 1em;*/
+
+
+
+
+
+
+}
+
+.em{
+
+
+  font-size: 2em
+}
+.ex{
+
+
+  font-size: 2ex
+}
+.articulo{
+
+  font-size: 2em
+}
+.em2{
+
+    font-size: 2em
+}
+.rem{
+
+  font-size: 2rem
+}
