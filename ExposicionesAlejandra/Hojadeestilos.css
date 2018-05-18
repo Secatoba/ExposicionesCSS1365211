@@ -1,0 +1,22 @@
+a:link{color: blue;}
+a:visited{color: red;}
+a:hover{background-color: blue}
+a:active{color: lima}
+div,
+select{
+  margin: 8px;
+}
+input :checked + label{
+  color: red;
+}
+input[type="radio"]:checked{
+  box-shadow: 0 0 3px orange;
+}
+input[type="checkbox"]:checked{
+  box-shadow: 0 0 3px hotpink;
+}
+h1{line-height: 2cm;}
+p{word-spacing: 5mm;}
+p::after{
+  content:"-remember"
+}

@@ -1,0 +1,20 @@
+div{
+  width: 100px;
+  height: 100px;
+  background: #4A88F4;
+  color: #fff;
+  font-size: 30px;
+}
+.caja-padre{
+  width: 500px;
+  height: 500px;
+  background: #000;
+  position: relative;
+}
+.caja{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50px;
+}
