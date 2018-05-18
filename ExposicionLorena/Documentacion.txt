@@ -1,0 +1,36 @@
+
+*textcolor:
+
+La propiedad de color se usa para establecer el color del texto. El color está especificado por:
+
+>color name - like "red"
+>HEX value - like "#ff0000"
+>RGB value - like "rgb(255,0,0)"
+
+Esta propiedad esta soportada en la version 1.0 de chrome,en la version 4.0 de edge,en la version 1.0 mozilla,en la version 7.0 de opera mini.
+
+*textalignment:
+
+La propiedad textalignment especifica la alineación del texto en un elemento.Se compone de los siguientes atributos:
+
+>left - Alinea el texto a la izquierda
+>right - Alinea el texto a la derecha
+>center - Centra el texto
+>justify - Estira las líneas para que cada línea tenga el mismo ancho (como en periódicos y revistas)
+>initial - Establece esta propiedad a su valor predeterminado.
+>inherit - Hereda esta propiedad de su elemento principal.
+
+Esta propiedad esta soportada en la version 1.0 de chrome,en la version 4.0 de edge,en la version 1.0 mozilla,en la version 7.0 de opera mini.
+
+text transform:
+
+La propiedad de text-transform controla las mayúsculas del texto.Se compone de los siguientes atributos:
+
+>none - Sin mayúsculas. El texto se representa tal como es. Esto es predeterminado
+>caitalice - Transforma el primer carácter de cada palabra en mayúscula
+>uppercase - Transforma todos los caracteres en mayúsculas
+>lowercase - Transforma todos los caracteres a minúsculas
+>initial - Establece esta propiedad a su valor predeterminado.
+>inherit - Hereda esta propiedad de su elemento principal.
+
+Esta propiedad esta soportada en la version 1.0 de chrome,en la version 4.0 de edge,en la version 1.0 mozilla,en la version 7.0 de opera mini.
