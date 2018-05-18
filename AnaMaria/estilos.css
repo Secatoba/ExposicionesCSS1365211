@@ -8,7 +8,8 @@ se le asigna el color en cualquiera de los formatos  */
 #imagen{
   width: 80%;
   height: 60%;
-  background-image: url(a.jpg);
+  background-image: url(centrar.jpg);
+  background-size:cover;
 
 
 }
