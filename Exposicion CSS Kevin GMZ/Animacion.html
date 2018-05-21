@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    /*aqui se esstablece el nombre de la animacion*/
+    -webkit-animation-name: example;
+    -moz-animation-name: example;
+    -ms-animation-name: example;
+    -o-animation-name: example;
+    animation-name: example;
+    /*aqui se establecen los cambios que habrá en la animacion*/
+    -webkit-animation-duration: 4s; 
+    -moz-animation-duration: 4s; 
+    -ms-animation-duration: 4s; 
+    -o-animation-duration: 4s; 
+    animation-duration: 4s;
+    /*Aqui se establece el retrazo de la animacion al momento del inicio*/
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+    /*aqui se establece la cantidad de veces que se itera la animaxion antes de detenerse*/
+    -webkit-animation-iteration-count: 3;
+    -moz-animation-iteration-count: 3;
+    -ms-animation-iteration-count: 3;
+    -o-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+    /*aqui se establece si la animacion se efectuará en reversa o de forma alterna*/
+    -webkit-animation-direction: reverse/*alternate*/;
+    -moz-animation-direction: reverse /*alternate*/;
+    -ms-animation-direction: reverse/*alternate*/;
+    -o-animation-direction: reverse/*alternate*/;
+    animation-direction: reverse/*alternate*/;
+
+}
+
+/*Animacion 2 colores*/
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+@-moz-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+@-ms-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+@-o-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/*Animacion por %*/
+@-webkit-keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:200px; top:0px;}
+    50%  {background-color: blue; left:200px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+@-moz-keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:200px; top:0px;}
+    50%  {background-color: blue; left:200px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+@-ms-keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:200px; top:0px;}
+    50%  {background-color: blue; left:200px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+@-o-keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:200px; top:0px;}
+    50%  {background-color: blue; left:200px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+@keyframes example {
+    0%   {background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:200px; top:0px;}
+    50%  {background-color: blue; left:200px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+
+/*Animacion */
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+
+</body>
+</html>

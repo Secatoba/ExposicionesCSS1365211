@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    -moz-animation: mymove 5s infinite;
+    -ms-animation: mymove 5s infinite;
+    -o-animation: mymove 5s infinite;    
+    animation: mymove 5s infinite;
+}
+
+#div1 {-webkit-animation-timing-function: linear;}/*velocidad normal*/
+#div2 {-webkit-animation-timing-function: ease;}/*lento al inicio y final esto por default*/
+#div3 {-webkit-animation-timing-function: ease-in;}/*lento al inicio*/
+#div4 {-webkit-animation-timing-function: ease-out;}/*lento al final*/
+#div5 {-webkit-animation-timing-function: ease-in-out;}/*lento al inicio y final*/
+
+#div1 {-moz-animation-timing-function: linear;}
+#div2 {-moz-animation-timing-function: ease;}
+#div3 {-moz-animation-timing-function: ease-in;}
+#div4 {-moz-animation-timing-function: ease-out;}
+#div5 {-moz-animation-timing-function: ease-in-out;}
+
+#div1 {-ms-animation-timing-function: linear;}
+#div2 {-ms-animation-timing-function: ease;}
+#div3 {-ms-animation-timing-function: ease-in;}
+#div4 {-ms-animation-timing-function: ease-out;}
+#div5 {-ms-animation-timing-function: ease-in-out;}
+
+#div1 {-o-animation-timing-function: linear;}
+#div2 {-o-animation-timing-function: ease;}
+#div3 {-o-animation-timing-function: ease-in;}
+#div4 {-o-animation-timing-function: ease-out;}
+#div5 {-o-animation-timing-function: ease-in-out;}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 800px;}
+}
+@-moz-keyframes mymove {
+    from {left: 0px;}
+    to {left: 800px;}
+}
+@-ms-keyframes mymove {
+    from {left: 0px;}
+    to {left: 800px;}
+}
+@-o-keyframes mymove {
+    from {left: 0px;}
+    to {left: 800px;}
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 800px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-timing-funtion property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.padre {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    perspective: 500px;
+}
+
+.ratadelaboratorio {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    -ms-transform: rotateX(45deg);
+    -webkit-transform: rotateX(45deg);
+    -moz-transform: rotateX(45deg);
+    -o-transform: rotateX(45deg);
+    transform: rotateX(45deg);
+}
+
+.ratadelaboratorio{
+    -ms-transform: translateZ(-45px);
+    -moz-transform: translateZ(-45px);
+    -webkit-transform: translateZ(-45px);
+    -o-transform: translateZ(-45px);
+    transform: translateZ(-45px);
+}
+
+.ratadelaboratorio{
+    -ms-transform: scaleZ(2);
+    -moz-transform: scaleZ(2);
+    -webkit-transform: scaleZ(2);
+    -o-transform: scaleZ(2);
+    transform: scaleZ(2);
+}  
