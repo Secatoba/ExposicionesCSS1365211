@@ -11,9 +11,7 @@ p{
   padding: 10px;
   border: 2px rgba(0, 0, 0,.1) solid;
   margin: 0;
-
+display: inline;
 }
 
-p > a{
-  display: block;
-}
+
