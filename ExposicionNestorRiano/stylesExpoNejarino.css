@@ -5,7 +5,7 @@ h1 {
 /* Poner texto del párrafo en negrita. */
 
 p {
-    font-weight: bold;
+    font-weight: 200;
 }
 
 /* Define el texto  del div en dos pasos más oscuros que
