@@ -1,0 +1,22 @@
+/*Selectores de elemento: se usa el nombre de la etiqueta*/
+      h1{color: rgb(238, 18, 18);}
+      p{font-style: oblique;}
+
+/*Selectores Anidados: Sirven para ser mas especificos con los Selectores*/
+      p span{color:rgb(46, 148, 21)}/*Aplica el estilo a todas las etiquetas span que esten dentro de un parrafo*/
+      h1 + h2 {color: rgb(194, 0, 145)}/*Selecor adyacente, aplica el estilo al primer h2 que esten despues de h1*/
+      ul ~ p {background-color: rgb(176, 225, 236)}/*Este selecciona cualquier eleento p siempre y cuando este despues de un ul*/
+      h1,h2,h3 {font-style: italic;} /*Permite agrupar varios elementos para aplicarles los mismos estilos*/
+      #id1, .clase1{color: rgb(40, 35, 148)} /*aplica el estilo a ese id y a la vez a esa clase*/
+
+/*Selectores por atributos*/
+      [href]{background-color: rgb(244, 241, 17)}/*Aplica el estilo a todos los elementos que tengan el atributo href*/
+      p[class="parrafo"]{color:rgb(167, 169, 184)}/*selecciona todos los p que tengan la clase parrafo*/
+      [class~="two"]{color: rgb(185, 247, 88)}/*selecciona el elemento que su atributo tenga ese valor almenos una vez*/
+      [id|="primero"]{color: rgb(9, 113, 116)}/*aplica a los elementos que el atributo tiene un valor igual o empieza por ese valor seguido de guion -*/
+      p[class^="one"]{color: rgb(3, 106, 10)}/*selecciona los elementos p que su atributo clase empieze por one*/
+      [class$="four"]{background-color: rgb(153, 146, 80)}/*selecciona los elementos que su atributo clase termine en four*/
+      a[href*="example"] {color: rgb(241, 105, 18);}/*Selecciona los elementos que href contengan ese valor en alguna parte*/
+      p[id="TEXT" i ]{background-color: rgb(251, 234, 229); border-radius: 15px}
+      /*para que no se compare entre mayusculas y minusculas se coloca "i" antes del corchete ] con cualquier operador*/
+      

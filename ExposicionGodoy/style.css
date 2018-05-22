@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'releway';
+  src: url('fonts/webfonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/webfonts/raleway_thin-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/webfonts/raleway_thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/webfonts/raleway_thin-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-family: 'releway';
+
+}
+
+.prueba{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+}

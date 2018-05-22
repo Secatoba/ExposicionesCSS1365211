@@ -1,0 +1,126 @@
+UNIDADES RELATIVAS: 
+
+NOS PERMITEN CALCULAR O DEFINIR CIERTAS  PROPIEDADES DE CSS ALTURA ANCHURA Y TAMAÑO DE LETRA 
+PARA DEFINIR UNA UNIDAD DE MEDIDA SE COLOCA UN NUMERO SEGUIDO DE LA UNIDAD DE MEDIDA, NO SE LE DA NINGUN ESPACIO DE ESA FORMA MARCARIA 
+UN ERROR, PODEMOS DEFINIR EN NUMEROS DECIMALES POR EJEMPLO 7.1, SI LA QUEREMOS DEJAR EN 0 SIMPLEMENTE COLOCAMOS 0
+EN CSS TENEMOS DOS GRANDES GRUPOS DE UNIDADES DE MEDIDAS ABSOLUTAS Y RELATIVAS
+
+
+Del lado de las unidades de medida relativas, tenemos: em (cuerpo tipográfico), 
+rem (cuerpo tipográfico del root), ex (altura de x), ch (ancho del 0), % (porcentaje) 
+
+RELATIVAS: SON  RELATIVAS A UN PUNTO DE REFERENCIA SEGUN ESE PUNTO DE REFERENCIA QUE NOSTROS DEFINIMOS LAS UNIDADES 
+DE MEDIDAS VAN A SER DIFERENTES
+
+SE SEPARA UNA DE ELLAS  Y ES LA DE PORCENTAJE QUE SEFINE  EN ESTE SIMBOLO (%)
+TENEMNOS CLASES PARA IR VIENDO CUALES SON LAS UNIDADES DE MEDIDAS RELATIVAS EN ESTE CASO TENEMOS 
+EM
+EX
+PX los pixeles no se consideran como una unidad de medida absoluta en pantallas de alta densidad 
+pues un pixel pasa a ser un conjunto de pixeles es decir se reescala y no se veria igual entonces por eso se 
+considera que es una unidad de medida relativa 
+REM
+Y VAMOS A VER COMO FUNCIONA CADA UNA DE ELLAS 
+VAMOS A DEFINIR SU PUNTO DE REFERENCIA 
+TOMAMOS LA ETIQUETA QUE TIENE MAYOR JERARQUIA QUE ES LA DEL BODY
+
+FONT SIZE EL TAMÑO DE FUENTE 
+font-size:20px
+y si recargamos todos se ven de la misma manera 
+VAMOS A TOMAR EL PARRAFO QUE TIENE LA CLASE EM
+VAMOS A CMABIAR EL FONT-SIZE:2em; y vemos que cambia el tamaño
+COMO SE CALCULA ESE TAMAÑO APARTIR DEL ANCHO DE LA M MAYUSCULA ES DECIR EN ESTE
+CASO ES EL DOBLE DE LA M
+Y LOS EX APARTIR DEL ALTO DE LA X MINUSCULA
+
+definimos la clase .ex
+
+cambiamos el font-size: 2ex y vemos que apenas a cambiado porque se calcula apartir del alto de la x minuscula
+vamos a ver un ejemplo de em heredado 
+vamos a estilos definmos 
+.articulo
+
+ font-size: ponemos la misma unidad de medida que es 2 em
+
+y vemos que los parrafos cambiaron por que el parrafo que esta dentro de la clase articuloo esta heredadondo
+el punto de referencia esta heredando el article que tiene la clase articulo
+pero si cambiamos el parrafo dentro del articulo
+es decir .em2
+ font-size:2em 
+va a subir de level
+ahora vamos con el rem
+.rem{
+font-size: 2rem
+} 
+
+vemos que se hace un poco mas pequeño
+porque el rem porque desde la raiz va a empezar a calcular no va a tomar el valor que a heredado en este caso 
+no ha herdeado del articulo sino del body porque el body tiene mayor jerarquia entre todas las unidades de medida
+
+y tenemos las unidades porcentuales
+definimos un parrafo con clase parrafo y vamos al css y colocamos 
+.parrafo
+
+font-size:200% es decir va a crecer 	
+su punto de refencia es 20 pixeles
+pero como aqui le estamos cambiando el fontfize a 200% es decir este va a medir lo que son 40 pixeles  y si colocamos 50%
+
+tambien para el tamaño y anchura
+vh
+Relativo al 1% del ancho de la ventana gráfica *
+
+
+
+SOPORTES
+Más recientemente la proliferación de los sitios web con diseño adaptable (responsive design in english) han marcado como tendencia el uso de unidades relativas (% o em) en detrimento del pixel para conseguir una mejor visualización en dispositivos móviles. Aún así, 
+seguimos teniendo algunos problemas con el uso de estas unidades por el efecto “cascada”.
+ Un ejemplo sencillo: mostrar ejemplo
+Utilizando los em como unidad para párrafos y listas, que a su vez están anidadas, 
+provoca que el tamaño del texto vaya decreciendo. Controlar este efecto en páginas
+ grandes y complejas es bastante complicado y al final suele resolverse mediante prueba y error. 
+
+Para corregir este problemilla las últimas especificaciones CSS3 nos traen novedades. 
+Empezamos con rem, que no es un grupo de música, sino una nueva unidad de medida de texto relativa.
+ La principal diferencia entre rem y em es que rem está referido al 
+elemento raíz de la página en lugar del contenedor.
+El problema de em es que su valor va referido al contenedor del elemento que tiene aplicado el estilo.
+
+para corregirlo
+p, li
+{
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+VW, VH y VMIN: Unidades relativas al dispositivo
+Otras novedades importantes son las unidades vw, vh y vmin. Enfocadas al uso en diseño adaptado a distintos dispositivos, se trata de unidades relativas al tamaño en pixels del dispositivo. Funcionan así:
+
+1 vw = 1% de la anchura (width) de la ventana del dispositivo.
+1vh = 1% de la altura (height) de la ventana del dispositivo.
+1vim = 1% de la dimensión, altura o anchura, más pequeña del dispositivo.
+Por ejemplo, suponiendo un tamaño de ventana del navegador de 1000×800, establecer el texto en 1.8vw equivale a 18 px , 2vh serían 16px y 1.5vmin = 12px.
+
+Aún no todos los navegadores soportan las nuevas unidades, pero como ya 
+estamos acostumbrados poco a poco se irán implementando. De momento funcionan 100% en 
+Webkit (chrome, safari, ios) e IE9 / IE10 (en IE9 vmin se llama vm). 
+En Firefox se incluirá en la versión 19 (finales de febrero) y 
+en Opera se implementará en breve.
+
+
+PREFIJOS NAVEGADORES O PREFIJOS COMERCIALES
+El uso de prefijos suele aplicarse a propiedades que se encuentran en fase experimental o que aún no se han convertido en un estándar.
+
+para instalar plugins 
+en sublime text
+control shitf b y buscamos install packea
+en atom igual autoprefixe
+
+para configurar las teclas nos vamos a key bindings
+para configurar caracteristicas nos vamos a package setings auto prefixer etting setter user 
+
+
+div
+Auto-signig y tabulador;
+control shitf b
+
+

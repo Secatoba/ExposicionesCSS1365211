@@ -1,0 +1,74 @@
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+/* Este metodo se usa para trasladar un elemento sobre el eje X y el eje Y*/
+div#DivTranslate {
+    -ms-transform: translate(0px, 0px);
+    /* IE 9 */
+    -webkit-transform: translate(0px, 0px);
+    /* Google Chrome, Safari */
+    -o-transform: translate(0px, 0px);
+    /* Opera*/
+    -moz-transform: translate(0px, 0px);
+    /*Mozilla*/
+    transform: translate(0px, 0px);
+    /* Sintaxis Estandar */
+}
+
+/* Este metodo se usa para rotar un elemento en el sentido de las manecillas del reloj o en contra de estas*/
+div#DivRotate {
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg)
+}
+
+/* Este metodo se usa para aumentar o disminuir el tamao de un elemento*/
+div#DivScale {
+    -ms-transform: scale(2, 3);
+    -webkit-transform: scale(2, 3);
+    -o-transform: scale(2, 3);
+    transform: scale(2, 3);
+}
+
+/* Los siguientes metodos se usan para sesgar un elemento sobre el eje X y el eje Y*/
+div#DivSkewX {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+
+div#DivSkewY {
+    -ms-transform: skewY(20deg);
+    -webkit-transform: skewY(20deg);
+    -o-transform: skewY(20deg);
+    transform: skewY(20deg);
+}
+
+div#DivSkewEnXY {
+    -ms-transform: skew(20deg, 10deg);
+    -webkit-transform: skew(20deg, 10deg);
+    -o-transform: skew(20deg, 10deg);
+    transform: skew(20deg, 10deg);
+}
+
+/*Este metdo se usa para manejar de forma combinada todos los metodos anteriores
+Los parámetros son los siguientes: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+*/
+div#DivMatrix1{
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    -o-transform: matrix(1, -0.3, 0, 1, 0, 0);
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#DivMatrix2{
+    -ms-transform: matrix(1, 0, 0.5, 1, 150, 0);
+    -webkit-transform: matrix(1, 0, 0.5, 1, 150, 0);
+    -o-transform: matrix(1, 0, 0.5, 1, 150, 0);
+}

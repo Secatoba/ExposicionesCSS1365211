@@ -1,0 +1,33 @@
+/*background-color: esta propiedad es fácil de usar solamente se define y
+se le asigna el color en cualquiera de los formatos  */
+#color{
+  background-color: rgba(116, 117, 176, 0.66);
+}
+
+/*background-image en este caso será una imagen el fondo */
+#imagen{
+  width: 80%;
+  height: 60%;
+  background-image: url(centrar.jpg);
+  background-size:cover;
+
+
+}
+#pimg{
+  color: rgba(42, 79, 134, 0.77);
+  font-size: 35px;
+
+}
+
+.lorem{
+  /*margin-left: 10px;
+  margin-right: 5px;*/
+}
+
+#contenedor{
+  width: 1200px;
+  height: 1200px;
+  background-image: url(repetir.jpg);
+  background-repeat:  no-repeat;
+  background-attachment: scroll;
+}

@@ -1,0 +1,59 @@
+h1 {
+    color: blueviolet;
+}
+
+/* Poner texto del párrafo en negrita. */
+
+p {
+    font-weight: 200;
+}
+
+/* Define el texto  del div en dos pasos más oscuros que
+    lo normal, pero menos que una negrita estándar. */
+
+div {
+    font-weight: 600;
+}
+
+/* Establece el texto incluido dentro de la etiqueta span 
+    para ser un paso más ligero que el padre. */
+
+span {
+    font-weight: lighter;
+}
+
+/*Variaciones de fuente*/
+
+h2 {
+    font-variant: small-caps;
+}
+
+p.variant {
+    font-variant: small-caps;
+}
+
+/*Decoraciones de texto por clases*/
+
+h1.under {
+    text-decoration: underline;
+}
+
+h1.over {
+    text-decoration: overline;
+}
+
+p.line {
+    text-decoration: line-through;
+}
+
+p.blink {
+    text-decoration: blink;
+}
+
+a.none {
+    text-decoration: none;
+}
+
+p.underover {
+    text-decoration: underline overline;
+}

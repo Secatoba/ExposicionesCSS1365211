@@ -1,0 +1,154 @@
+font weight: La propiedad font-weight de CSS especifica el peso o grueso de la letra. 
+Algunos tipos de letra sólo están disponibles en normal y bold.
+
+    sintaxis: 
+        font-weight: normal;
+        font-weight: bold;
+
+        /* Relativo al padre */
+        font-weight: lighter;
+        font-weight: bolder;
+
+        font-weight: 100;
+        font-weight: 200;
+        font-weight: 300;
+        font-weight: 400;
+        font-weight: 500;
+        font-weight: 600;
+        font-weight: 700;
+        font-weight: 800;
+        font-weight: 900;
+
+        /* Valores globales */
+        font-weight: inherit;
+        font-weight: initial;
+        font-weight: unset;
+
+    Valores: 
+        normal: Peso/grueso normal de la letra. Lo mismo que 400.
+        
+        bold: Grueso ancho (negrita). Igual que 700.
+        
+        lighter: Corresponde a un tipo de letra menos gruesa que el 
+        tipo del elemento padre (dentro de los valores disponibles).
+        
+        bolder: Corresponde a un tipo de letra más gruesa que el tipo 
+        del elemento padre (dentro de los valores disponibles).
+        
+        100, 200, 300, 400, 500, 600, 700, 800, 900 
+        Pesos numéricos para los tipos de letra que nos permiten más 
+        flexibilidad que normal - bold. Si el peso especificado no existe 
+        en el tipo de letra escogido, un valor entre 600 y 900 se presentará 
+        con el valor más próximo disponible par dar una letra más oscura. 
+        De igual forma, un valor entre 100 y 500 se presentará con el valor 
+        más próximo disponible para dar una letra más clara. Esto significa 
+        que para los tipos de letra que sólo dispongan de normal y bold, 
+        cualquier valor entre 100 y 500 será normal y entre 600 y 900, será bold.
+
+    ejemplos:
+
+    html:
+    <p>
+    Alice was beginning to get very tired of sitting by her sister on the
+    bank, and of having nothing to do: once or twice she had peeped into the
+    book her sister was reading, but it had no pictures or conversations in
+    it, 'and what is the use of a book,' thought Alice 'without pictures or
+    conversations?'
+    </p>
+
+    <div>I'm heavy<br/>
+    <span>I'm lighter</span>
+    </div>
+
+    css:
+    /* Poner texto del párrafo en negrita. */
+    p {
+    font-weight: bold;
+    }
+
+    /* Set div text to two steps darker than
+    normal but less than a standard bold. */
+    div {
+    font-weight: 600;
+    }
+
+    /* Sets text enclosed within span tag 
+    to be one step lighter than the parent. */
+    span {
+    font-weight: lighter;
+    }
+
+-------------------------------------------------------------------------------------------------
+
+font variant: La propiedad font-variant selecciona entre los aspectos 
+    normal y small-caps para la familia de fuente determinado.
+
+    Sintaxis:   font-variant: [normal | small-caps] ;
+    Valores:
+
+        normal: Especifica un aspecto de letra normal.
+
+        small-caps: Especifica un tipo de letra que está declarado como 
+        tipo de letra small-caps. Si no hay un tipo de letra small-caps disponible, 
+        el navegador simulará un tipo de letra small-caps, por ejemplo tomando un tipo de 
+        letra normal y reemplazando las letras en minúsculas por caracteres en mayúsculas escalados.
+
+        ejemplo:    h1 { font-variant: small-caps }
+                    p { font-variant: small-caps}
+
+--------------------------------------------------------------------------------------------------
+
+text decoration: La propiedad CSS text-decoration se usa para establecer el formato 
+de texto a subrayado (underline) y suprarrayado (overline), tachado (line-through) 
+o parpadeo (blink). El subrayado y el suprarrayado son posicionados bajo el texto, 
+mientras la línea a través de éste se posiciona por encima. Las decoraciones de texto 
+se dibujan a través de los elementos descendientes. Esto significa que no es posible 
+deshabilitar la decoración en un descendiente si la propiedad se especifica en un 
+elemento ancestro. Por ejemplo, en el código <p>Este texto tiene <em>algunas palabras 
+enfatizadas</em> en él.</p>, la regla de estilos p { text-decoration: underline; } 
+causará que el párrafo entero tenga subrayado. La regla em { text-decoration: none; } 
+no causará ningún cambio; el párrafo entero seguirá subrayado. Sin embargo, la regla 
+em { text-decoration: overline; } causará una segunda decoración que aparecerá sobre 
+"algunas palabras enfatizadas".
+
+sintaxis:
+    /* Valores clave */
+    text-decoration: none;                 /* Sin decoración */
+    text-decoration: underline red;        /* Subrayado rojo */
+    text-decoration: underline wavy red;   /* Subrayado rojo ondulado */
+
+    /* Valores globales */
+    text-decoration: inherit;
+    text-decoration: initial;
+    text-decoration: unset;
+
+valores: 
+
+    La propiedad text-decoration es una forma reducida, y puede usar los valores 
+    de cada una de las propiedades de la forma larga: text-decoration-line, 
+    text-decoration-color, y text-decoration-style
+
+sintaxis formal:
+
+    <'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'>
+
+ejemplos:
+
+    h1.under {
+        text-decoration: underline;
+    }
+    h1.over {
+        text-decoration: overline;
+    }
+    p.line {
+        text-decoration: line-through;
+    }
+    p.blink {
+        text-decoration: blink;
+    }
+    a.none {
+        text-decoration: none;
+    }
+    p.underover {
+        text-decoration: underline overline;
+    }

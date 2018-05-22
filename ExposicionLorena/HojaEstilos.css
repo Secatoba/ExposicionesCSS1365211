@@ -1,0 +1,41 @@
+
+h4 {
+    color: #92a8d1;
+}
+
+p {
+    color: blue;
+}
+p.ex{
+    color:purple;
+}
+div.a {
+    text-align: center;
+}
+
+div.b {
+    text-align: left;
+}
+
+div.c {
+    text-align: right;
+} 
+
+div.d {
+    text-align: justify;
+} 
+div.a {
+    text-transform: uppercase;
+}
+
+div.b {
+    text-transform: lowercase;
+}
+
+div.c {
+    text-transform: capitalize;
+}
+
+ 
+
+ 

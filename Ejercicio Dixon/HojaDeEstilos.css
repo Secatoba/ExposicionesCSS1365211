@@ -1,0 +1,20 @@
+.grande{
+  outline: 10px solid green;
+  height: 800px;
+  width: 1000px;
+  margin: auto;
+
+
+}
+
+.rojo{
+  background: red;
+  width: 300px;
+  height: 300px
+}
+.azul{
+  background: blue;
+  width: 300px;
+  height: 300px
+
+}
